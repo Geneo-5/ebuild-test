@@ -11,7 +11,7 @@ Test
 ----
 
 ```
-rm -rd build
+rm -rf build
 make
 touch sub2/sub21/sub212/func212.c
 make
