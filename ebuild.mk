@@ -12,7 +12,7 @@ test-objs         = main.o
 test-cflags       = $(common-cflags)
 test-ldflags      = $(EXTRA_LDFLAGS)
 
-ifneq ($(NOLOTS),)
+ifeq ($(NOLOTS),)
 test-lots         = builtin.a
 else
 test-ldflags     += $(BUILDDIR)/builtin.a
